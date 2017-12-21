@@ -5,9 +5,9 @@ RUN apt-get update && apt-get install -y \
   apache2 \
   cron \
   curl \
-  #php \
-  #php-cli \
-  #php-curl \
+  php7.0 \
+  php7.0-cli \
+  php7.0-curl \
   wireless-tools \
   dnsmasq \
   apt-utils \
