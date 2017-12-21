@@ -1,10 +1,12 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node:6
 
 # Install other apt deps
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade && apt-get install -y \
   apache2 \
+  apache2-utils \
   cron \
   curl \
+  libapache2-mod-php7.0 \
   php7.0 \
   php7.0-cli \
   php7.0-curl \
